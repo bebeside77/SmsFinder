@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="분류 이름"/>
+
+    <EditText
+        android:id="@+id/sectionName"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="패턴 문자"/>
+
+    <EditText
+        android:id="@+id/sectionPattern"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|right">
+
+        <Button
+            android:id="@+id/modifyBtn"
+            android:text="수정"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:text="취소"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
