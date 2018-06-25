@@ -7,6 +7,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;

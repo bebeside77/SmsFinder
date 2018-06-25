@@ -1,48 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:layout_width="300dp"
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="분류 이름"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="분류 이름"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"/>
 
     <EditText
         android:id="@+id/sectionName"
-        android:layout_width="200dp"
-        android:layout_height="50dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:text="패턴 문자"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="패턴 문자"
+        android:textSize="17sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"/>
 
     <EditText
         android:id="@+id/sectionPattern"
-        android:layout_width="200dp"
-        android:layout_height="50dp" />
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
         android:orientation="horizontal"
-        android:gravity="bottom|right">
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp">
 
         <Button
             android:id="@+id/modifyBtn"
-            android:text="수정"
             android:layout_width="100dp"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:text="수정"
+            android:textSize="17sp"
+            android:layout_toLeftOf="@id/cancelBtn"/>
 
         <Button
             android:id="@+id/cancelBtn"
-            android:text="취소"
             android:layout_width="100dp"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:text="취소"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </LinearLayout>

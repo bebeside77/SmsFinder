@@ -31,15 +31,12 @@ public class SmsLoader {
 
 		List<Sms> smsList = loadSmsList();
 
-//		List<Sms> mmsList = loadMmsList();
-//		smsList.addAll(mmsList);
-
 		dataHelper.deleteAllSms();
 		List<Section> sectionList = dataHelper.selectSections();
 
 		for (Section section : sectionList) {
 			for (Sms sms : smsList) {
-				if (sms.getBody().contains(section.getPattern())) {
+				if (sms.getBody().toLowerCase().contains(section.getPattern().toLowerCase())) {
 					sms.setSectionName(section.getName());
 
 					dataHelper.insertSms(sms);
